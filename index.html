@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>크루즈 영어, 이것만 — 탑승 전 실전 표현</title>
+<meta name="description" content="크루즈 여행에 꼭 필요한 영어 표현. 숫자부터 캐빈 요청, 기항지 All aboard까지 한글 발음과 함께.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B3A5C;--gold:#D4A94A;--ivory:#FAF7F2;--ash:#F1ECE3;
+--ink:#2B2B2B;--gray:#7A7A7A;--line:#E4DDD0;--red:#C4553F;--green:#3F7D5C;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;
+background:var(--ivory);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%;}
+.sec{background:#fff;border:1px solid var(--line);border-radius:16px;
+padding:26px 20px;margin-bottom:20px;}
+.sec-h{display:flex;gap:12px;align-items:flex-start;padding-bottom:16px;
+margin-bottom:18px;border-bottom:2px solid var(--ash);}
+.sec-ic{font-size:26px;line-height:1.2;}
+.sec h2{font-size:19px;color:var(--navy);font-weight:800;letter-spacing:-.4px;}
+.sec-sub{font-size:13px;color:var(--gray);margin-top:3px;}
+.sub-h{font-size:13px;font-weight:800;color:var(--navy);margin:22px 0 10px;
+padding-left:9px;border-left:3px solid var(--gold);}
+.numgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;}
+.numc{background:var(--ivory);border:1px solid var(--line);border-radius:11px;
+padding:11px 13px;display:flex;align-items:center;gap:11px;}
+.numn{width:29px;height:29px;flex:none;background:var(--navy);color:#fff;
+border-radius:8px;font-weight:800;font-size:14px;display:flex;
+align-items:center;justify-content:center;}
+.numen{font-size:14px;font-weight:700;color:var(--navy);}
+.numpr{font-size:14px;color:var(--ink);margin-left:auto;font-weight:600;}
+.words{display:flex;flex-direction:column;gap:9px;}
+.wd{background:var(--ivory);border:1px solid var(--line);border-radius:11px;padding:12px 14px;}
+.wd-top{display:flex;align-items:center;gap:8px;}
+.phrases{display:flex;flex-direction:column;gap:10px;}
+.ph{background:var(--ivory);border:1px solid var(--line);
+border-left:4px solid var(--navy);border-radius:11px;padding:13px 15px;}
+.ph.hl{border-left-color:var(--gold);background:#FDF8EC;}
+.ph-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.en{font-size:16px;font-weight:800;color:var(--navy);letter-spacing:-.2px;}
+.star{font-size:12px;}
+.pron{font-size:15px;color:var(--ink);margin-top:5px;font-weight:600;}
+.pron b,.numpr b{color:var(--red);font-weight:800;}
+.mean{font-size:13px;color:var(--gray);margin-top:4px;}
+.steps{display:flex;flex-direction:column;gap:9px;}
+.step{background:var(--ivory);border:1px solid var(--line);border-radius:11px;
+padding:13px 15px;font-size:14px;}
+.tip{margin-top:18px;background:var(--ash);border-radius:12px;
+padding:15px 16px;font-size:13.5px;line-height:1.75;}
+.tip-h{font-weight:800;color:var(--navy);margin-bottom:7px;font-size:13px;}
+.cmp{border-radius:12px;padding:14px 16px;margin-bottom:10px;border:1px solid var(--line);}
+.cmp.ok{background:#F0F6F2;border-color:#C6DDD0;}
+.cmp.warn{background:#FBF0EC;border-color:#EBCBC0;}
+.cmp-h{display:flex;align-items:center;gap:7px;font-size:15px;color:var(--navy);margin-bottom:6px;}
+.tag{margin-left:auto;font-size:11px;background:var(--navy);color:#fff;
+padding:3px 9px;border-radius:20px;font-weight:700;}
+.cmp.warn .tag{background:var(--red);}
+.cmp-b{font-size:13px;color:var(--ink);line-height:1.7;}
+.danger{background:#FFF6F4;border:1px solid #EBCBC0;border-radius:12px;
+padding:15px 16px;margin:14px 0;font-size:13px;line-height:1.75;}
+.danger-h{font-weight:800;color:var(--red);margin-bottom:7px;}
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;}
+.du{background:var(--ivory);border:1px solid var(--line);border-radius:12px;
+padding:14px 10px;text-align:center;}
+.du-ic{font-size:22px;}
+.du-en{font-size:13px;font-weight:800;color:var(--navy);margin-top:5px;}
+.du-ko{font-size:12px;color:var(--gray);margin-top:3px;}
+.du-note{font-size:12px;margin-top:7px;padding-top:7px;border-top:1px dashed var(--line);}
+.safe{background:#F0F6F2;border:1px solid #C6DDD0;border-radius:12px;padding:15px 16px;margin-bottom:14px;}
+.safe-h{font-weight:800;color:var(--green);margin-bottom:9px;font-size:13px;}
+.safe-i{display:flex;gap:9px;align-items:flex-start;font-size:13px;margin-bottom:7px;line-height:1.6;}
+.safe-i .no{width:19px;height:19px;flex:none;background:var(--green);color:#fff;
+border-radius:50%;font-size:11px;font-weight:800;display:flex;
+align-items:center;justify-content:center;margin-top:2px;}
+
+.wrap{max-width:520px;margin:0 auto;padding:0 14px 60px;}
+.hero{background:var(--navy);color:#fff;margin:0 -14px 18px;padding:38px 24px 32px;text-align:center;}
+.ovl{font-size:11px;letter-spacing:2.5px;color:var(--gold);font-weight:700;}
+.hero h1{font-size:26px;font-weight:800;margin:11px 0 10px;line-height:1.4;letter-spacing:-.6px;}
+.hero p{font-size:14px;color:#C9D6E2;line-height:1.7;}
+.calm{background:#FDF8EC;border:1px solid #E8D9B0;border-radius:14px;
+padding:20px 18px;margin-bottom:20px;text-align:center;}
+.calm-t{font-size:17px;font-weight:800;color:var(--navy);margin-bottom:8px;}
+.calm-b{font-size:13.5px;color:var(--ink);line-height:1.75;}
+.nav{position:sticky;top:0;z-index:20;background:var(--ivory);
+padding:10px 0;margin:0 -14px 16px;border-bottom:1px solid var(--line);}
+.nav-in{display:flex;gap:7px;overflow-x:auto;padding:0 14px;
+-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.nav-in::-webkit-scrollbar{display:none;}
+.chip{flex:none;background:#fff;border:1px solid var(--line);border-radius:20px;
+padding:8px 14px;font-size:12.5px;font-weight:700;color:var(--navy);
+white-space:nowrap;cursor:pointer;font-family:inherit;}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+.say{background:var(--gold);border:none;border-radius:50%;width:27px;height:27px;
+font-size:13px;cursor:pointer;flex:none;margin-left:auto;line-height:1;}
+.say.mini{width:21px;height:21px;font-size:10px;margin-left:5px;
+display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;}
+.say:active{transform:scale(.9);}
+.pdf{display:block;background:var(--navy);color:#fff;text-align:center;
+padding:17px;border-radius:14px;font-size:15px;font-weight:800;
+text-decoration:none;margin-bottom:20px;}
+.pdf small{display:block;font-size:12px;color:var(--gold);font-weight:600;margin-top:4px;}
+.foot{text-align:center;padding:30px 0 10px;font-size:12px;color:var(--gray);line-height:1.9;}
+.foot a{color:var(--navy);font-weight:700;}
+@media(max-width:360px){.numgrid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="ovl">CRUISE ENGLISH</div>
+    <h1>크루즈 영어,<br>이것만 알면 됩니다</h1>
+    <p>숫자 1부터 시작합니다<br>한글 발음 그대로 읽으세요</p>
+  </div>
+
+  <div class="calm">
+    <div class="calm-t">영어 못해도 갑니다 🙂</div>
+    <div class="calm-b">
+      크루즈는 숙박·식사·이동이 배 안에서 다 해결돼요.<br>
+      그래서 필요한 영어가 <b>몇 개 상황</b>으로 정해져 있습니다.<br>
+      단어 한두 개면 충분해요.
+    </div>
+  </div>
+
+  <a class="pdf" href="cruise-english.pdf" target="_blank" rel="noopener">
+    📄 PDF로 저장하기
+    <small>배에서 인터넷 없이 보려면 미리 받아두세요</small>
+  </a>
+
+  <nav class="nav"><div class="nav-in"><button class="chip" data-go="s-num">🔢 숫자부터</button><button class="chip" data-go="s-word">🛳️ 크루즈 단어</button><button class="chip" data-go="s-hi">👋 인사 · 안부</button><button class="chip" data-go="s-korea">🇰🇷 어느 나라에서 왔어요?</button><button class="chip" data-go="s-silent">🤫 말 안 하고 해결하기</button><button class="chip" data-go="s-bar">🍺 바 · 레스토랑</button><button class="chip" data-go="s-cabin">🛏️ 캐빈 요청</button><button class="chip" data-go="s-bag">🧳 짐이 안 왔을 때</button><button class="chip" data-go="s-time">⏰ 시간 물어보기</button><button class="chip" data-go="s-port">⚓ 기항지 — 가장 중요</button><button class="chip" data-go="s-clock">🕐 시차 · 십타임</button><button class="chip" data-go="s-listen">👂 직원이 하는 말</button><button class="chip" data-go="s-sos">🆘 만능 문장 3개</button></div></nav>
+
+<section class="sec" id="s-num">
+<div class="sec-h"><span class="sec-ic">🔢</span><div><h2>숫자부터</h2><p class="sec-sub">캐빈 번호 · 데크 · 인원수 · 시간, 전부 숫자예요</p></div></div>
+<div class="numgrid">
+<div class="numc"><div class="numn">1</div><div class="numen">one<button class="say mini" data-t="one" aria-label="발음 듣기">🔊</button></div><div class="numpr">원</div></div>
+<div class="numc"><div class="numn">2</div><div class="numen">two<button class="say mini" data-t="two" aria-label="발음 듣기">🔊</button></div><div class="numpr">투</div></div>
+<div class="numc"><div class="numn">3</div><div class="numen">three<button class="say mini" data-t="three" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>쓰</b>리</div></div>
+<div class="numc"><div class="numn">4</div><div class="numen">four<button class="say mini" data-t="four" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>포</b>얼</div></div>
+<div class="numc"><div class="numn">5</div><div class="numen">five<button class="say mini" data-t="five" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>파</b>이브</div></div>
+<div class="numc"><div class="numn">6</div><div class="numen">six<button class="say mini" data-t="six" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>씩</b>스</div></div>
+<div class="numc"><div class="numn">7</div><div class="numen">seven<button class="say mini" data-t="seven" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>쎄</b>븐</div></div>
+<div class="numc"><div class="numn">8</div><div class="numen">eight<button class="say mini" data-t="eight" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>에</b>잇</div></div>
+<div class="numc"><div class="numn">9</div><div class="numen">nine<button class="say mini" data-t="nine" aria-label="발음 듣기">🔊</button></div><div class="numpr"><b>나</b>인</div></div>
+<div class="numc"><div class="numn">10</div><div class="numen">ten<button class="say mini" data-t="ten" aria-label="발음 듣기">🔊</button></div><div class="numpr">텐</div></div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>캐빈 번호는 <b>한 자리씩</b> 읽어요.<br>9256호 → <b>나인 투 파이브 씩스</b><br><br>앞자리가 데크 번호예요. 9256이면 <b>9번 데크</b>.<br>카드키만 보면 길 잃어도 찾아갑니다.</div></div>
+</section>
+<section class="sec" id="s-word">
+<div class="sec-h"><span class="sec-ic">🛳️</span><div><h2>크루즈 단어</h2><p class="sec-sub">이 단어만 알아도 크루즈 좀 아는 사람처럼 들려요</p></div></div>
+<div class="words">
+<div class="wd"><div class="wd-top"><span class="en">Cabin</span><button class="say" data-t="Cabin" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>캐</b>빈</div><div class="mean">객실 — 호텔의 room이 아니에요</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Deck</span><button class="say" data-t="Deck" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>덱</b></div><div class="mean">층 — 7층은 deck seven</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Gangway</span><button class="say" data-t="Gangway" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>갱</b>웨이</div><div class="mean">배 타고 내리는 통로</div></div>
+<div class="wd"><div class="wd-top"><span class="en">All aboard</span><button class="say" data-t="All aboard" aria-label="발음 듣기">🔊</button></div><div class="pron">올 어<b>보</b>드</div><div class="mean">배에 타야 하는 마감 시간</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Muster drill</span><button class="say" data-t="Muster drill" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>머</b>스터 드릴</div><div class="mean">비상 대피 훈련 — 첫날 필수 참석</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Tender</span><button class="say" data-t="Tender" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>텐</b>더</div><div class="mean">작은 배로 갈아타고 들어가는 항구</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Sea day</span><button class="say" data-t="Sea day" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>씨</b> 데이</div><div class="mean">하루 종일 바다만 가는 날</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Port day</span><button class="say" data-t="Port day" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>포</b>트 데이</div><div class="mean">기항지에 내리는 날</div></div>
+<div class="wd"><div class="wd-top"><span class="en">Ship time</span><button class="say" data-t="Ship time" aria-label="발음 듣기">🔊</button></div><div class="pron"><b>십 타</b>임</div><div class="mean">배 시간 — 모든 기준은 이것</div></div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>호텔에서 쓰는 <b>room</b>, <b>floor</b> 대신<br>크루즈에서는 <b>cabin</b>, <b>deck</b>을 씁니다.</div></div>
+</section>
+<section class="sec" id="s-hi">
+<div class="sec-h"><span class="sec-ic">👋</span><div><h2>인사 · 안부</h2><p class="sec-sub">배에서 하루에도 몇 번씩 인사를 받아요</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Hello.</span><span class="star">⭐</span><button class="say" data-t="Hello." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>헬</b>로우</div>
+  <div class="mean">안녕하세요 (아무 때나)</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Good morning.</span><button class="say" data-t="Good morning." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">굿 <b>모</b>닝</div>
+  <div class="mean">안녕하세요 (아침)</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Thank you.</span><span class="star">⭐</span><button class="say" data-t="Thank you." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>땡</b>큐</div>
+  <div class="mean">감사합니다</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Sorry.</span><button class="say" data-t="Sorry." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>쏘</b>리</div>
+  <div class="mean">죄송해요 · 실례합니다</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Nice to meet you.</span><button class="say" data-t="Nice to meet you." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">나이스 투 <b>밋</b> 유</div>
+  <div class="mean">반가워요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Bye!</span><button class="say" data-t="Bye!" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>바</b>이!</div>
+  <div class="mean">안녕히 계세요</div>
+</div>
+</div>
+<div class="sub-h">👂 이렇게 물어봐요</div><div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">How are you?</span><button class="say" data-t="How are you?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">하우 아 <b>유</b>?</div>
+  <div class="mean">잘 지내세요? — 제일 많이 듣는 인사</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Good, thank you.</span><button class="say" data-t="Good, thank you." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>굿</b>, <b>땡</b>큐</div>
+  <div class="mean">좋아요, 감사합니다 ← 이 대답 하나면 끝</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">And you?</span><button class="say" data-t="And you?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">앤 <b>유</b>?</div>
+  <div class="mean">그쪽은요? — 되물어주면 완벽</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>승무원이 지나가며 <b>Good morning!</b> 하면<br><b>Good morning!</b> 그대로 돌려주면 됩니다.<br><br>How are you? 는 진짜 안부가 아니라 <b>인사말</b>이에요.<br>고민하지 말고 <b>Good, thank you.</b> 하시면 됩니다.</div></div>
+</section>
+<section class="sec" id="s-korea">
+<div class="sec-h"><span class="sec-ic">🇰🇷</span><div><h2>어느 나라에서 왔어요?</h2><p class="sec-sub">배에서 가장 많이 받는 질문이에요</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Korea.</span><span class="star">⭐</span><button class="say" data-t="Korea." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">코<b>리</b>아</div>
+  <div class="mean">한국이요 — 이 한마디면 충분</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">I'm from Korea.</span><span class="star">⭐</span><button class="say" data-t="I&#x27;m from Korea." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">아임 프롬 코<b>리</b>아</div>
+  <div class="mean">한국에서 왔어요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">South Korea.</span><button class="say" data-t="South Korea." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>사</b>우스 코<b>리</b>아</div>
+  <div class="mean">남한이요 (구분해서 물으면)</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">I'm Korean.</span><button class="say" data-t="I&#x27;m Korean." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">아임 코<b>리</b>안</div>
+  <div class="mean">저는 한국사람이에요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Seoul, Korea.</span><button class="say" data-t="Seoul, Korea." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>서</b>울, 코<b>리</b>아</div>
+  <div class="mean">한국 서울이요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">And you?</span><span class="star">⭐</span><button class="say" data-t="And you?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">앤 <b>유</b>?</div>
+  <div class="mean">그쪽은요? — 되물어보기</div>
+</div>
+</div>
+<div class="sub-h">👂 이렇게 물어봐요</div><div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">Where are you from?</span><button class="say" data-t="Where are you from?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">웨얼 아 유 <b>프</b>롬?</div>
+  <div class="mean">어느 나라에서 오셨어요?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">First time?</span><button class="say" data-t="First time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>퍼</b>스트 <b>타</b>임?</div>
+  <div class="mean">크루즈 처음이세요?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Are you enjoying?</span><button class="say" data-t="Are you enjoying?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">아 유 인<b>조</b>잉?</div>
+  <div class="mean">즐겁게 지내고 계세요?</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>대답은 <b>Yes!</b> 하나면 다 통해요.<br><br>한국 소개는 이 세 마디로 충분합니다.<br><b>K-pop!</b> · <b>BTS!</b> · <b>K-drama!</b><br><br>크루즈 승무원은 필리핀 · 인도네시아 · 인도 출신이 많아요.<br>한국 드라마를 보는 분들이 많아서 <b>Korea</b> 한마디에<br>대화가 확 풀립니다. 🙂</div></div>
+</section>
+<section class="sec" id="s-silent">
+<div class="sec-h"><span class="sec-ic">🤫</span><div><h2>말 안 하고 해결하기</h2><p class="sec-sub">입이 안 떨어질 때 이렇게 하면 다 됩니다</p></div></div>
+<div class="steps">
+<div class="step">🎫 <b>캐빈 카드키 보여주기</b> — 번호가 다 적혀 있어요</div>
+<div class="step">✋ <b>손가락으로 숫자 표시</b> — 두 개면 브이</div>
+<div class="step">✍️ <b>메모지에 숫자 적어서 보여주기</b></div>
+<div class="step">📱 <b>번역앱 화면 보여주기</b></div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>말이 안 나오면 이 한마디만 하세요.<br><b>Write, please.</b> (<b>롸</b>잇 플리즈) — 적어주세요<br><br>종이 내밀면 다 적어줍니다. 왕초보 최고의 무기예요.</div></div>
+</section>
+<section class="sec" id="s-bar">
+<div class="sec-h"><span class="sec-ic">🍺</span><div><h2>바 · 레스토랑</h2><p class="sec-sub">제일 많이 쓰는 곳이에요</p></div></div>
+<div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">Beer, please.</span><button class="say" data-t="Beer, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>비</b>얼 플리즈</div>
+  <div class="mean">맥주 주세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Two, please.</span><button class="say" data-t="Two, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>투</b> 플리즈</div>
+  <div class="mean">두 개요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Water, please.</span><button class="say" data-t="Water, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>워</b>터 플리즈</div>
+  <div class="mean">물 주세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Coffee, please.</span><button class="say" data-t="Coffee, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>커</b>피 플리즈</div>
+  <div class="mean">커피 주세요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Free?</span><span class="star">⭐</span><button class="say" data-t="Free?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>프</b>리?</div>
+  <div class="mean">공짜예요? (추가 요금 없어요?)</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Table for two.</span><button class="say" data-t="Table for two." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>테</b>이블 포 <b>투</b></div>
+  <div class="mean">두 명이요</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>음료 패키지가 없으면 술·특정 음료는 <b>추가 요금</b>이 붙어요.<br>그래서 <b>Free?</b> 가 배에서 제일 많이 쓰는 한마디입니다.</div></div>
+</section>
+<section class="sec" id="s-cabin">
+<div class="sec-h"><span class="sec-ic">🛏️</span><div><h2>캐빈 요청</h2><p class="sec-sub">전화로 하거나, 복도에서 승무원에게</p></div></div>
+<div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">Towels, please.</span><button class="say" data-t="Towels, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>타</b>월스 플리즈</div>
+  <div class="mean">수건 주세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Clean, please.</span><button class="say" data-t="Clean, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>클</b>린 플리즈</div>
+  <div class="mean">청소해주세요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Twin beds, please.</span><span class="star">⭐</span><button class="say" data-t="Twin beds, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>트</b>윈 베즈 플리즈</div>
+  <div class="mean">침대 둘로 나눠주세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Cabin 9256.</span><button class="say" data-t="Cabin 9256." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>캐</b>빈 나인 투 파이브 씩스</div>
+  <div class="mean">9256 캐빈이에요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Deck seven, please.</span><button class="say" data-t="Deck seven, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>덱 쎄</b>븐 플리즈</div>
+  <div class="mean">7번 데크요 (엘리베이터에서)</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>캐빈 담당 승무원이 매일 정해져 있어요.<br>첫날 인사하고 이름 한번 불러주면 훨씬 잘 챙겨줍니다.</div></div>
+</section>
+<section class="sec" id="s-bag">
+<div class="sec-h"><span class="sec-ic">🧳</span><div><h2>짐이 안 왔을 때</h2><p class="sec-sub">첫날 저녁까지 짐이 안 오는 경우가 있어요</p></div></div>
+<div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">No bag.</span><button class="say" data-t="No bag." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">노 <b>백</b></div>
+  <div class="mean">짐이 없어요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Cabin 9256, no bag.</span><span class="star">⭐</span><button class="say" data-t="Cabin 9256, no bag." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>캐</b>빈 나인 투 파이브 씩스, 노 백</div>
+  <div class="mean">9256인데 짐이 없어요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Check, please.</span><button class="say" data-t="Check, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>첵</b> 플리즈</div>
+  <div class="mean">확인해주세요</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>짐은 승무원이 캐빈 앞까지 가져다줘요.<br>보통 <b>저녁 늦게까지</b> 도착합니다. 너무 일찍 걱정 안 하셔도 돼요.<br><br>약·화장품·수영복은 <b>손가방</b>에 챙기세요.</div></div>
+</section>
+<section class="sec" id="s-time">
+<div class="sec-h"><span class="sec-ic">⏰</span><div><h2>시간 물어보기</h2><p class="sec-sub">만능 표현 하나면 다 통합니다</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">What time?</span><span class="star">⭐</span><button class="say" data-t="What time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">왓 <b>타</b>임?</div>
+  <div class="mean">몇 시예요? (만능)</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Checkout, what time?</span><button class="say" data-t="Checkout, what time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>첵</b>아웃 왓 <b>타</b>임?</div>
+  <div class="mean">퇴실 몇 시예요?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Dinner, what time?</span><button class="say" data-t="Dinner, what time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>디</b>너 왓 <b>타</b>임?</div>
+  <div class="mean">저녁 식사 몇 시예요?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Exit?</span><button class="say" data-t="Exit?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>엑</b>싯?</div>
+  <div class="mean">나가는 곳이 어디예요?</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>단어 + <b>what time?</b> 만 붙이면<br>무엇이든 시간을 물어볼 수 있어요.</div></div>
+</section>
+<section class="sec" id="s-port">
+<div class="sec-h"><span class="sec-ic">⚓</span><div><h2>기항지 — 가장 중요</h2><p class="sec-sub">이 두 문장 놓치면 배를 놓칩니다</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">All aboard, what time?</span><span class="star">⭐</span><button class="say" data-t="All aboard, what time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">올 어<b>보</b>드 왓 <b>타</b>임?</div>
+  <div class="mean">몇 시까지 들어와야 돼요?</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Gangway, where?</span><span class="star">⭐</span><button class="say" data-t="Gangway, where?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>갱</b>웨이 웨얼?</div>
+  <div class="mean">내리는 곳이 어디예요?</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Ship time?</span><span class="star">⭐</span><button class="say" data-t="Ship time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>십 타</b>임?</div>
+  <div class="mean">배 시간 기준이죠?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Write, please.</span><button class="say" data-t="Write, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>롸</b>잇 플리즈</div>
+  <div class="mean">적어주세요 (안 들릴 때)</div>
+</div>
+</div>
+<div class="sub-h">👂 이렇게 대답이 돌아와요</div><div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">Four thirty.</span><button class="say" data-t="Four thirty." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">포얼 <b>써</b>티</div>
+  <div class="mean">4시 30분</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Five o'clock.</span><button class="say" data-t="Five o&#x27;clock." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">파이브 어<b>클</b>락</div>
+  <div class="mean">5시 정각</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Deck three.</span><button class="say" data-t="Deck three." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>덱 쓰</b>리</div>
+  <div class="mean">3번 데크예요</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>All aboard 시간은 내릴 때 <b>갱웨이 옆에 크게 써 있어요.</b><br>📸 <b>사진 한 장 찍어두세요.</b> 그게 제일 확실합니다.</div></div>
+</section>
+<section class="sec" id="s-clock">
+<div class="sec-h"><span class="sec-ic">🕐</span><div><h2>시차 · 십타임</h2><p class="sec-sub">자는 사이에 시간이 바뀝니다</p></div></div>
+<div class="cmp ok"><div class="cmp-h">📺 <b>TV · 캐빈 시계</b><span class="tag">Ship time</span></div><div class="cmp-b">배가 정한 공식 시간.<br>All aboard · 식사 · 공연 전부 이 기준이에요.</div></div>
+<div class="cmp warn"><div class="cmp-h">📱 <b>휴대폰 시간</b><span class="tag">Local time</span></div><div class="cmp-b">기항지에서 <b>현지 시간으로 자동 변경</b>돼요.<br>배 시간과 어긋납니다.</div></div>
+<div class="danger"><div class="danger-h">🚨 이래서 배를 놓칩니다</div><div>배는 오후 3시(ship time)인데 휴대폰은 오후 2시(local time).<br>All aboard가 4시 30분이면 <b>휴대폰만 보다가 한 시간 늦게</b> 돌아옵니다.<br>배는 기다려주지 않아요.</div></div>
+<div class="dual">
+<div class="du"><div class="du-ic">😊</div><div class="du-en">Clocks go back</div><div class="du-ko">시계를 되돌려요</div><div class="du-note">잠을 <b>1시간 더</b> 잡니다</div></div>
+<div class="du"><div class="du-ic">😭</div><div class="du-en">Clocks go forward</div><div class="du-ko">시계를 앞으로 당겨요</div><div class="du-note">잠을 <b>1시간 뺏깁니다</b></div></div>
+</div>
+<div class="safe"><div class="safe-h">✅ 안전하게 가는 법</div>
+<div class="safe-i"><span class="no">1</span><span>내리기 전 <b>캐빈 TV·시계 사진</b> 한 장 📸</span></div>
+<div class="safe-i"><span class="no">2</span><span>휴대폰 시간 자동설정 끄고 <b>ship time 고정</b></span></div>
+<div class="safe-i"><span class="no">3</span><span>헷갈리면 물어보기 → <b>Ship time?</b></span></div>
+</div>
+<div class="phrases">
+<div class="ph">
+  <div class="ph-top"><span class="en">Time change tonight?</span><button class="say" data-t="Time change tonight?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>타</b>임 체인지 투<b>나</b>잇?</div>
+  <div class="mean">오늘 밤 시간 바뀌어요?</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Ship time?</span><span class="star">⭐</span><button class="say" data-t="Ship time?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>십 타</b>임?</div>
+  <div class="mean">배 시간 기준이죠?</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">One hour different.</span><button class="say" data-t="One hour different." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">원 <b>아</b>월 <b>디</b>퍼런트</div>
+  <div class="mean">1시간 차이 나요</div>
+</div>
+</div>
+</section>
+<section class="sec" id="s-listen">
+<div class="sec-h"><span class="sec-ic">👂</span><div><h2>직원이 하는 말</h2><p class="sec-sub">말하는 것보다 알아듣는 게 더 급해요</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Cabin number?</span><span class="star">⭐</span><button class="say" data-t="Cabin number?" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>캐</b>빈 <b>넘</b>버?</div>
+  <div class="mean">캐빈 번호요? → 9256만 말하면 끝</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Sign here.</span><button class="say" data-t="Sign here." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">사인 <b>히</b>얼</div>
+  <div class="mean">여기 서명하세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Card, please.</span><button class="say" data-t="Card, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>카</b>드 플리즈</div>
+  <div class="mean">크루즈 카드 주세요</div>
+</div>
+<div class="ph">
+  <div class="ph-top"><span class="en">Enjoy!</span><button class="say" data-t="Enjoy!" aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">인<b>조</b>이!</div>
+  <div class="mean">즐거운 시간 되세요! → Thank you 로 답하면 끝</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>크루즈 카드는 <b>객실 열쇠 + 신분증 + 결제수단</b>이에요.<br>배에서는 이거 하나만 들고 다니면 됩니다.</div></div>
+</section>
+<section class="sec" id="s-sos">
+<div class="sec-h"><span class="sec-ic">🆘</span><div><h2>만능 문장 3개</h2><p class="sec-sub">이것만 외워도 배에서 안 굶습니다</p></div></div>
+<div class="phrases">
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Sorry, no English.</span><span class="star">⭐</span><button class="say" data-t="Sorry, no English." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>쏘</b>리 노 <b>잉</b>글리시</div>
+  <div class="mean">죄송해요, 영어 못해요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">Help, please.</span><span class="star">⭐</span><button class="say" data-t="Help, please." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron"><b>헬</b>프 플리즈</div>
+  <div class="mean">도와주세요</div>
+</div>
+<div class="ph hl">
+  <div class="ph-top"><span class="en">One minute.</span><span class="star">⭐</span><button class="say" data-t="One minute." aria-label="발음 듣기">🔊</button></div>
+  <div class="pron">원 <b>미</b>닛</div>
+  <div class="mean">잠시만요 (번역앱 켤 시간 벌기)</div>
+</div>
+</div>
+<div class="tip"><div class="tip-h">💡 알아두면 좋아요</div><div>문장 끝에 <b>please</b> 하나만 붙이면<br>전부 예의 있는 말이 됩니다.<br><br>완벽한 문장보다 <b>웃으면서 한마디</b>가 훨씬 잘 통해요. 🙂</div></div>
+</section>
+
+  <div class="foot">
+    크루즈클럽 🛳️<br>
+    <a href="https://open.kakao.com/o/sbJudavg" target="_blank" rel="noopener">궁금한 점 물어보기 →</a>
+  </div>
+</div>
+<script>
+(function(){
+  var sup='speechSynthesis' in window;
+  document.querySelectorAll('.say').forEach(function(b){
+    if(!sup){b.style.display='none';return;}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      try{
+        speechSynthesis.cancel();
+        var u=new SpeechSynthesisUtterance(b.getAttribute('data-t'));
+        u.lang='en-US'; u.rate=0.75;
+        speechSynthesis.speak(u);
+      }catch(err){}
+    });
+  });
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var t=document.getElementById(c.getAttribute('data-go'));
+      if(!t)return;
+      var y=t.getBoundingClientRect().top+window.pageYOffset-74;
+      window.scrollTo({top:y,behavior:'smooth'});
+    });
+  });
+  var secs=[].slice.call(document.querySelectorAll('.sec'));
+  function mark(){
+    var best=null,bd=1e9;
+    secs.forEach(function(s){
+      var d=Math.abs(s.getBoundingClientRect().top-90);
+      if(d<bd){bd=d;best=s;}
+    });
+    chips.forEach(function(c){
+      c.classList.toggle('on', best && c.getAttribute('data-go')===best.id);
+    });
+  }
+  window.addEventListener('scroll',mark,{passive:true});
+  mark();
+})();
+</script>
+</body>
+</html>
